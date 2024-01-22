@@ -1,0 +1,142 @@
+.head{
+  display: flex;
+  height: 55px;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-color: rgb(212, 208, 208);
+  border-bottom-style: solid;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.left{
+  display: flex;
+  align-items: center;
+}
+.icone1{
+  height: 23px;
+  margin-left: 23px;
+  cursor: pointer;
+}
+.icone2{
+  height: 20px;
+  margin-left: 23px;
+  margin-right: 60px ;
+  cursor: pointer;
+}
+.middle{
+  
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 500px;
+}
+.icone3,.icone4{
+  height: 23px;
+  
+}
+input{
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: rgb(197, 197, 197) ;
+  padding-left: 11px;
+  font-family: roboto;
+  font-weight: 4S00;
+  font-size: 16px;
+  flex: 1;
+  width: 0px;
+  height: 36px;
+  margin-right: -1px;
+  margin-left: 7px;
+  box-shadow: inset 0.10px 0.20px 3px rgba(0, 0, 0, 0.15);
+}
+input::placeholder{
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400
+}
+
+.button1{
+  
+  border: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: rgb(197, 197, 197);
+  width: 63px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.15s;
+}
+.button1:hover{
+  background-color:rgba(243, 240, 240, 0.952);
+}
+.button1:active{
+  opacity: 0.8;
+}
+.button2{
+  border: none;
+  height: 41px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.positions,.button1, .button2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.positions .tip, .button1 .tip, .button2 .tip{
+  background-color: grey;
+  padding:  2px 4px;
+  color: white;
+  position: absolute;
+  bottom: -28px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  white-space: nowrap;
+  pointer-events: none;
+  border-radius: 2px;
+  font-family: roboto;
+  
+}
+.positions:hover .tip, .button1:hover .tip,.button2:hover .tip{
+  opacity: 1;
+}
+
+.right{
+  display: flex;
+  width: 200px;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.notifications{
+  background-color: rgb(226, 18, 18);
+  position: absolute;
+  top :-1px;
+  right: 13px;
+  font-family: roboto;
+  color: white;
+  font-size: 11px;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 20px;
+}
+.icone5{
+  height: 25px;
+  cursor: pointer;  
+}
+.iconss{
+  height: 32px;
+  width: 35px;
+  border-radius: 16px;
+  cursor: pointer;  
+}
